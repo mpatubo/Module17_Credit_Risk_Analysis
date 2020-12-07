@@ -104,12 +104,34 @@ Used 2 Ensemble Classifiers, BalancedRandomForestClassifier and EasyEnsembleClas
 
 BalancedRandomForestClassifier
 Results:
-*Balanced accuracy score: 
-*Precision and recall scores: 
+Confusion Matrix
+Predicted 0	Predicted 1
+Actual 0	92	0
+Actual 1	0	17113
+Accuracy Score : 1.0
+Classification Report
+              precision    recall  f1-score   support
+
+   high_risk       1.00      1.00      1.00        92
+    low_risk       1.00      1.00      1.00     17113
+
+    accuracy                           1.00     17205
+   macro avg       1.00      1.00      1.00     17205
+weighted avg       1.00      1.00      1.00     17205
+
+
 
 
 Easy Ensemble AdaBoost Classifier
-Results:
+Classification Report
+              precision    recall  f1-score   support
+
+   high_risk       0.98      0.97      0.98       101
+    low_risk       1.00      1.00      1.00     17104
+
+    accuracy                           1.00     17205
+   macro avg       0.99      0.99      0.99     17205
+weighted avg       1.00      1.00      1.00     17205
 
 
-Recommendation:
+Recommendation:  I recommend to use methods, ensembles noted above.  It isnt whether which one works better.  A combination of all would be valuable rather using just one.  
